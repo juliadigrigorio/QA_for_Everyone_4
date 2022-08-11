@@ -242,6 +242,22 @@ print(s)
 
 #----------
 
+a = 43
+b = 10
+c = 5
+total_goals = a + b +c
+print ("total goals: " + str(total_goals))
+print(f'total goals: {total_goals}')
+
+#----------
+
+def greet(name):
+    return f"Hello, {name}, how are you?"
+
+print(greet("Bill"))
+
+#----------
+
 
 
 

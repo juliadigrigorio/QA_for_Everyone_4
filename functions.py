@@ -67,4 +67,22 @@ def two_highest(arg1):
         return print(arg1[0:2])
 two_highest(arg1)
 
+#----------
+
+def devide(a, b):
+    return a / b
+a = 6
+b = 2
+
+print(devide(a,b))
+
+#----------
+
+def int_to_string(a):
+    return str(a)
+
+print("Function test: " + int_to_string(123))
+
+#----------
+
 
