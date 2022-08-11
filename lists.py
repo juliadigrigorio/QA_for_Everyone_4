@@ -73,4 +73,58 @@ print(more_than_five([6, 2, 11, 3]))
 
 #----------
 
+l = [1,2,3,4,]
+def reverse_list(l):
+    l.reverse()
+    print(l)
+    return
+reverse_list(l)
+
+#----------
+
+arg1 = [4,10,10,9]
+def two_highest(arg1):
+    new = list(set(arg1))
+    new_sorted = sorted(new)
+    new_reversed = new_sorted[::-1]
+    if len(new_sorted) > 2:
+        return  print(new_reversed[0:2])
+    else:
+        return print(new_reversed)
+two_highest(arg1)
+
+#----------
+
+arg1 = [4,10,10,9]
+def two_highest(arg1):
+        arg1 = list(set(arg1))
+        arg1 = sorted(arg1)
+        arg1.reverse()
+        return print(arg1[0:2])
+two_highest(arg1)
+
+#----------
+
+ABC = 'Hello Python!'
+ABC_list = list(ABC)
+print(ABC_list)
+n = len(ABC_list)
+print(n)
+for i in range(n):
+    print(ABC_list[i])
+
+#----------
+
+ABC = 'abcdefghijklmnopqrstuvwxyz'
+ABC_list = list(ABC)
+print(len(ABC))
+y = 1
+for i in range(0, 10):
+
+    print(y, ABC[i])
+    y += 1
+
+#----------
+
+
 

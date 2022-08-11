@@ -235,5 +235,15 @@ print(msg)
 
 #----------
 
+# vivesti alfavit
+import string
+s = string.ascii_lowercase
+print(s)
+
+#----------
+
+
+
+
 
 
