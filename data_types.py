@@ -53,3 +53,15 @@ ip = '7'
 print('/'.join(up + ip))
 
 
+x = 4
+x += 5
+print(x)
+
+
+print(8/2)
+print(6*7.0)
+print(4+1.65)
+print(8**(1/3))
+print(20%6)
+
+

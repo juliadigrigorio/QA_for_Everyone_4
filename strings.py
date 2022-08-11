@@ -115,3 +115,13 @@ Two
 Three''')
 
 
+string = '''jfjgfhjgfhj
+ ghjgfdhjgdfhjgdhjgd
+ hgfjhgdfhjgdjhdhjgd'''
+
+print(string)
+
+
+print('Brian\'s mother said: \"He is ok"')
+
+
