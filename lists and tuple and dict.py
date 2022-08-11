@@ -126,5 +126,50 @@ for i in range(0, 10):
 
 #----------
 
+my_list = [1,2,5,'r', True,1,2,5]
+my_list.append('khgk')
+print(my_list)
+my_list.pop(1)
+print(my_list)
+my_list.insert(0,1)
+print(my_list)
+my_list.append([45.1, 56778])
+print(my_list)
+my_list.insert(0, [123445, 5.6])
+print(my_list)
+my_list.insert(-1, ('book', 'look'))
+print(my_list)
+print(my_list[3])
+
+#----------
+
+my_dict = {
+    'key': 'value',
+    'book_name': 'Tom Soyer',
+    'Author': 'Mark Tven',
+    'Date': 1922,
+    'is new': True,
+    1: ['yes', 'no']
+}
+my_dict['Date'] = 2023 #переприсвоить значение
+print(my_dict)
+
+print(my_dict['is new']) #найти элемент по ключу
+
+my_dict['jortgv'] = 2 #добавить новый ключ и значение
+print(my_dict)
+
+my_dict[('nhfgcnh')] = ['ngvg',987,653] #добавить новый элемент с ключем tuple и значением список
+print(my_dict)
+
+print(my_dict['Date']) #получить элемент по ключу
+
+my_dict.pop('Date') #удалить элемент
+print(my_dict)
+
+print(my_dict.keys()) #  получить список ключей
+print(my_dict.values()) # получить список values
+
+#----------
 
 

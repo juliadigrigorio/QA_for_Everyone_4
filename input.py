@@ -190,4 +190,32 @@ else:
 
 #----------
 
+y = input('print name: ')
+
+def function_name(_):
+    return (f'Hello, {_}')
+
+print(function_name(y))
+
+#----------
+
+g = int(input('numbers: '))
+j = int(input('numbers: '))
+
+def funtion_s4et(o,h):
+    print(o+h)
+funtion_s4et(g,j)
+
+#----------
+
+h = input('your name:  ')
+l = int(input('your number:  '))
+def function_vizov(a, b):
+    print(f'Hello, {a}, your number is {b}')
+function_vizov(h, l)
+
+#----------
+
+
+
 
