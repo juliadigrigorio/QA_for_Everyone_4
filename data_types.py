@@ -101,19 +101,7 @@ print(x,y, sep='\n')
 
 #----------
 
-import My_Module as calc #переименовать модуль
-import math
-import datetime
 
-
-print(calc.calculate(5,6,"-"))
-x = calc.var2
-print(calc.calculate(x,6,"-"))
-
-print(math.pow(2,2))
-print(datetime.date(2022, 5, 1))
-
-#----------
 
 
 

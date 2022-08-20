@@ -288,26 +288,8 @@ function_vizov(h, l)
 
 #----------
 
-def calculate(a,b, operation):
-    if operation == '+':
-        return a + b
-    elif operation == '-':
-        return a - b
-    elif operation == '*':
-        return a * b
-    elif operation == '*':
-        if b != 0:
-            return a / b
-        else:
-            return 'Not allowed'
 
-    else:
-        'Invalid operation'
 
-def capitalize_every_word(string):
-    return string.title()
-
-#----------
 
 
 
