@@ -75,5 +75,52 @@ file.close()
 
 #----------
 
+my_file = open('text.txt','r')
+
+print(my_file.read())
+print(my_file.readline())
+print(my_file.readline())
+
+print(my_file.readlines())
+print(my_file.readline(3)) # 3 символа
+print(my_file.read(3))
+
+for i in my_file:
+    print(i)
+
+my_file.close()
+
+#----------
+
+my_file = open('text2.txt', "a") # a = append,т дозаписывает, добавляет.
+my_file.write('\n my 3 text')
+my_file.close()
+my_file = open('text2.txt', 'r')
+print(my_file.read())
+my_file.close()
+
+#----------
+
+my_file = open('text3.txt', 'x') #х создает файл
+my_file.write('some text')
+my_file.close()
+my_file = open('text3.txt', 'r')
+print(my_file.read())
+my_file.close()
+
+#----------
+
+import os #удалить файл
+
+my_file = open('text4.txt', "a")
+my_file.write('\n my 3 text')
+my_file.close()
+my_file = open('text4.txt', 'r')
+print(my_file.read())
+my_file.close()
+
+os.remove('text4.txt') #удалить файл
+
+#----------
 
 
