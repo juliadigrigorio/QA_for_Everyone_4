@@ -63,3 +63,103 @@ if __name__ == '__main__':
 
 #----------
 
+import unittest
+from selenium import webdriver
+#from webdriver_manager.chrome import ChromeDriverManager
+#from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.by import By
+import time
+
+
+class TestMePlease(unittest.TestCase):
+
+    def setUp(self) -> None:
+        #service = Service(ChromeDriverManager().install())
+        self.driver = webdriver.Safari()#(service=service)
+        self.driver.set_window_size(1024, 768)
+
+    def test_1(self):
+        self.driver.get('https://www.selenium.dev/about/')
+        time.sleep(3)
+        self.driver.find_element(By.CSS_SELECTOR, "a[href='/documentation']").click()
+        self.assertEqual(self.driver.title, 'About Selenium | Selenium')
+        self.assertEqual(self.driver.current_url, "https://www.selenium.dev/documentation")
+        time.sleep(3)
+
+    def test_2(self):
+        self.driver.get('https://www.selenium.dev/documentation')
+        self.driver.execute_script("window.scrollTo(0,2500)")
+        time.sleep(3)
+
+
+    @unittest.skip('under development')
+    def test_3(self):
+        self.driver.get('https://www.getbootstrap.com')
+        self.assertEqual(34, "")
+
+
+    def tearDown(self) -> None:
+        self.driver.close()
+
+
+if __name__ == '__main__':
+    unittest.main()
+
+#----------
+
+import self as self
+from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.service import Service
+import unittest
+
+class TestRocks(unittest.TestCase):
+    def setUp(self) -> None:
+        service = Service(ChromeDriverManager().install())
+        self.driver = webdriver.Chrome(service=service)
+        self.driver.set_window_size(1024,768)
+
+    def test_rocks(self):
+        self.driver.get('https://techstepacademy.com/trial-of-the-stones')
+
+    def tearDown(self) -> None:
+        self.driver.close()
+
+if __name__ == '__main__':
+    unittest.main()
+
+#----------
+
+import unittest
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+
+class TestRock(unittest.TestCase):
+
+    def setUp(self) -> None:
+        self.driver = webdriver.Safari()
+        self.driver.set_window_size(1024, 768)
+
+    def test_1(self):
+        self.driver.get('https://techstepacademy.com/trial-of-the-stones')
+        time.sleep(3)
+        input1 = self.driver.find_element(By.ID, "r1Input")
+        button_answer = self.driver.find_element(By.ID, "r1Btn").click()
+        button_bamboo = self.driver.find_element(By.CSS_SELECTOR, "#passwordBanner h4" )
+        input1.send_keys('rock')
+
+        # self.assertEqual(self.driver.title, 'About Selenium | Selenium')
+        # self.assertEqual(self.driver.current_url, "https://www.selenium.dev/documentation")
+        # time.sleep(3)
+
+    def tearDown(self) -> None:
+        self.driver.close()
+
+
+if __name__ == '__main__':
+    unittest.main()
+
+#----------
+
