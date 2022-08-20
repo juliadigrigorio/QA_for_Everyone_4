@@ -172,4 +172,169 @@ print(my_dict.values()) # получить список values
 
 #----------
 
+my_list = ['test 1', 'test 2', 'test 3']
+
+print(my_list[0])
+print(my_list[1])
+print(my_list[2])
+
+#----------
+
+my_list = ['test 1', 'test 2', 'test 3']
+for x in my_list:
+    print(x)
+
+#----------
+
+my_list = ['test 1', 'test 2', 'test 3', 'test 2', 'test 1']
+for x in my_list:
+    print(x)
+
+#----------
+
+my_list = ['test 1', 'test 2', 'test 3', 'test 2', 'test 1']
+print(my_list)
+
+my_list[0] = 1024
+my_list[3] = False
+
+print(my_list)
+
+#----------
+
+my_list = ['test 1', 'test 2', 'test 3', 'test 2', 'test 1']
+print(len(my_list))
+print(type(my_list))
+
+#----------
+
+my_list = ['test 1', 'test 2', 'test 3', 'test 2', 'test 1']
+print(my_list)
+my_list.append(-5435)
+print(my_list)
+
+#----------
+
+# в отличие от списка картеж нельзя изменить
+# TUPLES (картеж)
+
+my_tuple = ('test1', 'test2', 'test3')
+print(my_tuple[1])
+
+#----------
+
+my_tuple = (1234, 'test1', 'test2', 'test3')
+print(my_tuple)
+my_tuple[0] = 'gogogo'  #попытка изменить tuple
+print(my_tuple)
+
+#----------
+
+my_list = [1234, 'test1', 'test2', 'test3']
+my_tuple = (1234, 'test1', 'test2', 'test3')
+print(my_tuple)
+print(my_list)
+my_list[0] = 'changed'
+print(my_list)
+my_list.append(True)
+print(my_list)
+
+#----------
+
+#СЛОВАРИ.      КЛЮЧИ ДОЛЖНЫ ЮЫТЬ УНИКАЛЬНЫ. типы данных мб разными. Индекс не присваевается.
+
+my_dictionary = {
+    'name': 'John',
+    'Last_name': 'Doe',
+    'BOB': '2022-03-21',
+    'Note': 'likes python'
+}
+print(my_dictionary)
+my_dictionary['name'] = 'Johanne'
+print(my_dictionary)
+
+#----------
+
+my_dictionary = {
+    'name': 'John',
+    'Last_name': 'Doe',
+    'BOB': '2022-03-21',
+    143: 'likes python',
+    'name': 'jojo'
+}
+print(my_dictionary)
+my_dictionary['name'] = 'Johanne'
+print(my_dictionary)
+print(my_dictionary['Last_name'], my_dictionary[143])
+print(len(my_dictionary))
+
+#----------
+
+my_dictionary = {
+    'name': 'John',
+    'Last_name': 'Doe',
+    'BOB': '2022-03-21',
+    143: 'likes python',
+    'colors': ['red', 'yellow', 'white', 'etc.']
+}
+print(my_dictionary['colors'])
+
+#----------
+
+# МНОЖЕСТВО данные в них не отсортированы. Не содержит копии.
+
+my_set = {'element_1', 'element_2', 'element_3', 'element_2', 'element_2', 'element_2'}
+print(my_set)
+print(len(my_set))
+print(type(my_set))
+
+#----------
+
+lst = ['one',  'two', 'three']
+for el in lst:
+    print(el)
+
+#----------
+
+for el in range(len(lst)):
+    print(el)
+for el in range(len(lst)):
+    print(lst[el])
+
+#----------
+
+l = 0
+while l < len(lst):
+    print(lst[l])
+    l += 1
+
+#----------
+
+print(lst.index('one'))
+
+#----------
+
+x1 = [1,2,3]
+x2 = [4,5,6]
+print(x1 + x2)
+
+#----------
+
+x3 = '1,2,3,4,5'
+x4 = (list(x3))
+print(x4)
+
+#----------
+
+x5 =[]
+for i in range(5):
+    x5.append(i)
+print(x5)
+
+#----------
+
+
+
+
+
 

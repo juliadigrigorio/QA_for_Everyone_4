@@ -353,6 +353,49 @@ for x in range(30, 0, -1):
 
 #----------
 
+my_list = ['test 1', 'test 2', 'test 3']
+for x in my_list:
+    print(x)
+
+#----------
+
+my_list = ['test 1', 'test 2', 'test 3', 'test 2', 'test 1']
+for x in my_list:
+    print(x)
+
+#----------
+
+lst = ['one',  'two', 'three']
+for el in lst:
+    print(el)
+
+#----------
+
+for el in range(len(lst)):
+    print(el)
+for el in range(len(lst)):
+    print(lst[el])
+
+#----------
+
+l = 0
+while l < len(lst):
+    print(lst[l])
+    l += 1
+
+#----------
+
+print(lst.index('one'))
+
+#----------
+
+x5 =[]
+for i in range(5):
+    x5.append(i)
+print(x5)
+
+#----------
+
 
 
 

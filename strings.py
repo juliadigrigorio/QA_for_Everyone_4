@@ -258,6 +258,12 @@ print(greet("Bill"))
 
 #----------
 
+#перевернуть строку
+string = 'abcd'
+print(string[::-1])
+
+#----------
+
 
 
 
