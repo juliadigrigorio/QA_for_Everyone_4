@@ -163,3 +163,34 @@ if __name__ == '__main__':
 
 #----------
 
+import unittest
+from selenium import webdriver
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+import time
+
+class TestWebsite(unittest.TestCase):
+
+    def setUp(self) -> None:
+        self.driver = webdriver.Safari()
+        self.driver.set_window_size(1024, 768)
+
+    def test_open_website(self):
+        self.driver.get('https://www.spletnik.ru')
+        # time.sleep(3)
+        # self.driver.find_element(By.XPATH,"//li[1]/a[2]")
+        logo = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH,"//div[1]/a")))
+
+        self.assertTrue(logo.is_displayed())
+
+
+    def tearDown(self) -> None:
+            self.driver.close()
+
+if __name__ == '__main__':
+        unittest.main()
+
+#----------
+
+
